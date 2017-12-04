@@ -1,8 +1,17 @@
-<h1>About</h1>
-<p>
-	<a href="http://raistutorial.jp/">Ruby on Rails Tutorial</a>
-	is a<a href="http://railstutorial.jp/#ebook">book</a> and
-	to teach web development with
-	<a href="http.//rubyinrails.org/">Ruby on Rails</a>
-	This is the sample application for the tutorial.
-</p>
+<% provide(:title, "About") %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= yield(:title)  %> | Ruby on Rails Tutorial Game App</title>
+	</head>
+	<body>
+		<h1>About</h1>
+		<p>
+			<a href="http://raistutorial.jp/">Ruby on Rails Tutorial</a>
+			is a<a href="http://railstutorial.jp/#ebook">book</a> and
+			to teach web development with
+			<a href="http.//rubyinrails.org/">Ruby on Rails</a>
+			This is the sample application for the tutorial.
+		</p>
+	</body>
+</html>
